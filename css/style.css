@@ -339,15 +339,14 @@ main .section5 .photo p{
 
 main .section5 .bouton{
     display: flex;
-    width: fit-content;
-    justify-self: center;
+    justify-content: center;
 }
 
 main .section5 .bouton a{
     border: 1px solid var(--darkblue);
     background-color: var(--darkblue);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 15px; 
 }
 
 main .section5 .bouton a:hover{
