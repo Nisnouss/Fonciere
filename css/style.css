@@ -337,14 +337,18 @@ main .section5 .photo p{
     margin-top: 20px
 }
 
+main .section5 .bouton{
+    display: flex;
+    width: fit-content;
+    justify-self: center;
+}
+
 main .section5 .bouton a{
     border: 1px solid var(--darkblue);
     background-color: var(--darkblue);
     color: white;
     padding: 10px 15px;
-    display: flex;
-    width: fit-content;
-    justify-self: center
+    
 }
 
 main .section5 .bouton a:hover{
