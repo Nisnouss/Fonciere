@@ -1,0 +1,666 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Général */
+
+*{
+    margin: 0;
+}
+
+:root{
+    --opensans: "Open Sans", sans-serif;
+    --montserrat: "Montserrat", sans-serif;
+    --darkblue: #27697CE3;
+    --grey: #859399;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: var(--opensans);
+    font-size: 16px;
+}
+
+p{
+    font-size: 16px;
+    font-style: var(--opensans);
+}
+
+h1,
+h2,
+h3{
+    font-family: var(--montserrat);
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    margin: 20px auto;
+    max-width: 1150px;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img{
+    width: 150px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul a{
+    color: black;
+    text-transform: uppercase;
+}
+
+header nav ul a:hover{
+    color: var(--darkblue);
+    transition: all 0.3s ease-in-out;
+}
+
+#burger_menu{
+    display: none;
+}
+
+/* Main */
+
+main .section1{
+    background-image: url(../img/Background/Batiment.jpg);
+    margin: auto;
+    max-width: 1440px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: space-evenly;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main .section1 div{
+    text-align: center;
+    background-color: hsla(193, 52%, 32%, 0.631);
+    margin: auto;
+    max-width: 600px;
+    height: 240px;
+}
+
+main .section1  div h1,
+main .section1 div h2{
+    color: white;
+    margin-bottom: 40px;
+}
+
+main .section1  div a{
+    color: var(--darkblue);
+    border: 1px solid var(--darkblue);
+    background-color: white;
+    padding: 10px 15px;
+}
+
+main .section1  div a:hover{
+    background-color: var(--darkblue);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+    padding: 14px 19px;
+}
+
+/* Section 2 */
+
+main .section2 .grandediv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1150px;
+    margin: 40px auto;
+    gap: 100px;
+}
+
+main .section2 .grandediv img{
+    width: 565px;
+    height: 530px;
+}
+
+main .section2 .grandediv h2{
+    color: var(--darkblue);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main .section2 .grandediv h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+main .section2 .grandediv .sousdiv{
+    display: flex;
+    gap: 15px;
+}
+
+main .section2 .grandediv .sousdiv hr{
+    border-color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    width: 30px;
+    margin-top: 12px;
+}
+
+main .section2 .grandediv .sousdiv p{
+    font-family: var(--opensans);
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+main .section2 .grandediv a{
+    border: 1px solid var(--darkblue);
+    background-color: var(--darkblue);
+    color: white;
+    padding: 10px 15px;
+}
+
+main .section2 .grandediv a:hover{
+    background-color: white;
+    color: var(--darkblue);
+    transition: all 0.3s ease-in-out;
+    padding: 14px 19px;
+}
+
+/* Section 3*/
+
+main .section3 div{
+    display: flex;
+    margin: 60px auto;
+    max-width: 1150px;
+    gap: 60px;
+    align-items: normal;
+    justify-content: space-evenly;
+}
+
+main .section3 div  p i{
+    color: var(--darkblue);
+}
+
+main .section3 div #icône{
+    font-size: 40px;
+}
+
+main .section3 div p{
+    font-family: var(--opensans);
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Section 4 */
+
+main .section4{
+    margin: 20px auto;
+    max-width: 1440px;
+    background-color: var(--darkblue);
+}
+
+main .section4 .grandediv1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 1150px;
+    gap: 60px;
+}
+
+main .section4 .grandediv1 #image,
+main .section4 .grandediv1 #text{
+    margin: 40px auto;
+}
+
+main .section4 .grandediv1 #image #divim1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+main .section4 .grandediv1 #image img{
+    width: 250px;
+    height: 100%;
+}
+
+main .section4 .grandediv1 #image #divim2 #img5{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+main .section4 .grandediv1 #text h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+main .section4 .grandediv1 #text h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+}
+
+main .section4 .grandediv1 #text p{
+    font-family: var(--opensans);
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+    line-height: 30px;
+}
+
+main .section4 .grandediv1 #text a{
+    border: 1px solid var(--darkblue);
+    color: var(--darkblue);
+    padding: 10px 15px;
+    background-color: white;
+}
+
+main .section4 .grandediv1 #text a:hover{
+    background-color: var(--darkblue);
+    border: 1px solid white;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 14px 19px;
+}
+
+main .section4 .grandediv1 #text .last{
+    margin-bottom: 30px;
+}
+
+/* Section 5 */
+
+main .section5{
+    margin: 40px auto;
+    max-width: 1440px;
+}
+
+main .section5 .title{
+    text-align: center;
+}
+
+main .section5 .title h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--darkblue);
+}
+
+main .section5 .title h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+main .section5 .photo{
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    margin: 20px auto;
+    max-width: 1150px;
+}
+
+main .section5 .photo img{
+    width: 100%;
+}
+
+main .section5 .photo p{
+    text-align: center;
+    font-family: var(--opensans);
+    font-size: 16px;
+    margin-top: 20px
+}
+
+main .section5 .bouton a{
+    border: 1px solid var(--darkblue);
+    background-color: var(--darkblue);
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    width: fit-content;
+    justify-self: center
+}
+
+main .section5 .bouton a:hover{
+    background-color: white;
+    color: var(--darkblue);
+    transition: all 0.3s ease-in-out;
+    padding: 13px 18px;
+}
+
+/* Section 6 */
+
+main .section6{
+    max-width: 1440px;
+    margin: auto;
+    background-color: var(--grey);
+    height: 600px;
+    align-content: center;
+}
+
+main .section6 .titreform{
+    display: grid;
+    justify-content: center;
+}
+
+main .section6 .titreform h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+main .section6 .titreform h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+main .section6 #formulaire{
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 580px;
+    line-height: 30px;
+}
+
+main .section6 #formulaire .cote input,
+main .section6 #formulaire .vide input{
+    width: -webkit-fill-available;
+    margin-bottom: 15px;
+}
+
+main .section6 #formulaire .seul input{
+    width: -webkit-fill-available;
+    margin-bottom: 15px;
+}
+
+main .section6 #formulaire .cote input,
+main .section6 #formulaire .seul input{
+    padding: 10px 15px;
+}
+
+main .section6 #formulaire .vide input{
+    height: 80px;
+}
+
+main .section6 #formulaire .cote{
+    display: flex;
+    gap: 20px;
+}
+
+main .section6 #formulaire .check{
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+main .section6 #formulaire .check label{
+    color: white;
+    font-family: var(--opensans);
+    font-size: 16px;
+}
+
+main .section6 #formulaire .check #checkbox{
+    margin-right: 5px;
+}
+
+main .section6 #formulaire .btn input{
+    border: 1px solid var(--grey);
+    background-color: white;
+    color: var(--darkblue);
+    padding: 10px 15px;
+}
+
+main .section6 #formulaire .btn input:hover{
+    border: var(--darkblue);
+    background-color: var(--darkblue);
+    color: white;
+    padding: 13px 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--darkblue);
+    margin: auto;
+    max-width: 1440px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-family: var(--opensans);
+    font-size: 16px;
+}
+
+footer p a{
+    color: white;
+}
+
+footer p a:hover{
+    color: var(--grey);
+    transition: all 0.3s ease-in-out;
+}
+
+footer  a i{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: var(--darkblue);
+    border: 1px solid white;
+    background-color: white;
+    padding: 8px;
+}
+
+@media screen and (max-width: 1024px){
+    header,
+    main,
+    footer{
+        padding: 0 15px;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    header #burger_menu{
+        display: flex;
+        color: var(--darkblue);
+    }
+
+    main .section2 .grandediv{
+        display: inline;
+    }
+
+    main .section2 .grandediv article{
+        margin: 20px auto;
+    }
+
+    main .section2 .grandediv article img{
+        display: flex;
+        justify-self: anchor-center;
+    }
+
+    main .section4{
+        height: 1350px;
+    }
+
+    main .section4 .grandediv1{
+        display: inline;
+    }
+
+    main .section4 .grandediv1 #image #divim1{
+        justify-items: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    main .section4 .grandediv1 #image #divim1 img{
+        width: 100%;
+    }
+
+    main .section4 .grandediv1 #image #divim2{
+        width: 705px;
+        height: 200px;
+        justify-self: anchor-center;
+        margin-top: 10px;
+    }
+
+    main .section4 .grandediv1 #text{
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    a{
+        font-size: 11px;
+    }
+
+    main .section1 div{
+        max-width: 240px;
+        height: 270px;
+    }
+
+    main .section2 .grandediv h2,
+    main .section4 .grandediv1 #text h2,
+    main .section5 .title h2,
+    main .section6 .titreform h2{
+        font-size: 16px;
+    }
+
+    main .section2 .grandediv h3,
+    main .section4 .grandediv1 #text h3,
+    main .section5 .title h3,
+    main .section6 .titreform h3{
+        font-size: 18px;
+    }
+
+    main .section2 .grandediv .sousdiv p,
+    main .section4 .grandediv1 #text p,
+    main .section5 .photo p,
+    main .section6 #formulaire .check label{
+        font-size: 13px;
+    }
+
+    main .section2 .grandediv a{
+        font-size: 11px;
+    }
+
+    main .section2 .grandediv img{
+        width: 265px;
+        height: 230px;
+    }
+
+    main .section3 div,
+    main .section5 .photo{
+        gap: 20px;
+    }
+
+    main .section3 div p,
+    footer p{
+        font-size: 13px;
+    }
+
+    main .section3 div .icône{
+        font-size: 28px;
+    }
+
+    main .section4 .grandediv1 #image{
+        display: none;
+    }
+
+    main .section4 .grandediv1 #text a:hover{
+        padding: 12px 14px;
+    }
+
+    main .section4{
+        height: 950px;
+    }
+
+    main .section6 #formulaire .cote{
+        max-width: 120px;
+        margin: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main .section6 #formulaire .seul input{
+        width: 220px;
+        display: flex;
+        justify-self: center;
+    }
+
+    main .section6 #formulaire .vide input{
+        width: 240px;
+        display: flex;
+        justify-self: center;
+    }
+
+    main .section6 .titreform{
+        padding-left: 15px;
+    }
+
+    main .section6{
+        height: 700px;
+    }
+
+    main .section6 #formulaire .check{
+        padding: 0 15px;
+        text-align: justify;
+    }
+
+    main .section6 #formulaire .btn{
+        padding-left: 15px;
+    }
+
+    main .section6 #formulaire .cote input,
+    main .section6 #formulaire .seul input{
+        padding: 7px 12px;
+    }
+
+    footer p a{
+        font-size: 13px;
+    }
+}
